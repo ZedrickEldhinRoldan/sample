@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/ed27c31baf.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: rgb(231, 91, 180);
+            text-align: center;
+            padding-top: 120px; 
+        }
+
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            background: linear-gradient(90deg, #ffb6c1, #ff69b4);
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(255, 182, 193, 0.5);
+            padding: 1rem;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 0.7rem 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-radius: 50px;
+            background-color: rgba(255, 153, 204, 0.8);
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 3px 5px rgba(255, 105, 180, 0.4);
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 102, 178, 0.9);
+            transform: scale(1.1);
+            box-shadow: 0 5px 10px rgba(255, 20, 147, 0.5);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff66b2;
+            text-shadow: 2px 2px 6px rgba(255, 105, 180, 0.5);
+            margin-top: 40px;
+        }
+
+        
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        .video-container {
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(255, 105, 180, 0.5);
+            overflow: hidden;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        .welcome-text {
+            max-width: 350px;
+            text-align: left;
+            background-color: rgba(255, 228, 225, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 3px 6px rgba(255, 105, 180, 0.3);
+        }
+
+        
+        @media (max-width: 768px) {
+            nav {
+                width: 95%;
+            }
+            nav ul {
+                gap: 10px;
+            }
+            nav a {
+                font-size: 0.9rem;
+                padding: 0.6rem 1.2rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .video-container {
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+            <li><a href="biography.html"><i class="fa-solid fa-user"></i> BIOGRAPHY</a></li>
+            <li><a href="resume.html"><i class="fa-solid fa-file"></i> RESUME</a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-lightbulb"></i> SKILLS</a></li>
+            <li><a href="Music.html"><i class="fa-brands fa-spotify"></i> MUSIC</a></li>
+            <li><a href="movies.html"><i class="fa-solid fa-film"></i> MOVIES</a></li>
+            <li><a href="tvshows.html"><i class="fa-solid fa-tv"></i> TV SHOWS</a></li>
+            <li><a href="place.html"><i class="fa-solid fa-globe"></i> PLACE</a></li>
+            <li><a href="bucketlist.html"><i class="fa-solid fa-list-check"></i> BUCKETLIST</a></li>
+            <li><a href="contacts.html"><i class="fa-solid fa-envelope"></i> CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <h1>Welcome to My Website</h1>
+
+    <div class="content">
+        <div class="video-container">
+            <video controls>
+                <source src="intro.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="welcome-text">
+            <p>Welcome to my personal space! Here you'll find insights into my skills, experiences, and creative journey. Feel free to explore the sections and get to know me better!</p>
+        </div>
+    </div>
+
+</body>
+</html>

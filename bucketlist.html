@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucket List</title>
+    <style>
+
+        body {
+            background-color: #fff5f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .bucketlist-section {
+            text-align: center;
+            max-width: 1000px;
+            margin: 60px auto;
+            background: linear-gradient(135deg, #ff0080, #ff66b2);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(255, 20, 147, 0.5);
+            color: #ffffff;
+        }
+
+        .bucketlist-section h2 {
+            font-size: 34px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .bucketlist-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .bucketlist-items {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: left;
+        }
+
+        .bucketlist-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .bucketlist-item:hover {
+            transform: scale(1.05);
+            background: white;
+            color: #ff0080;
+        }
+
+        .bucketlist-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: linear-gradient(to right, #ff0080, #ff66b2);
+            padding: 15px 30px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px rgba(255, 20, 147, 0.4);
+            position: fixed;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+        }
+
+        .nav-container a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-container a:hover {
+            background: white;
+            color: #ff0080;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <a href="index.html">HOME</a>
+    </div>
+
+    <div class="bucketlist-section">
+        <h2>My Bucket List</h2>
+        <p>These are the experiences and achievements I dream of accomplishing in my lifetime.</p>
+
+        <div class="bucketlist-items">
+            <div class="bucketlist-item">
+                <img src="skydiving.jpg" alt="Skydiving">
+                <span>Go Skydiving and experience the ultimate adrenaline rush!</span>
+            </div>
+            <div class="bucketlist-item">
+                <img src="aurora.jpg" alt="See the Northern Lights">
+                <span>Witness the breathtaking Northern Lights in Iceland.</span>
+            </div>
+            <div class="bucketlist-item">
+                <img src="greatwall.jpg" alt="Visit the Great Wall of China">
+                <span>Walk along the Great Wall of China.</span>
+            </div>
+            <div class="bucketlist-item">
+                <img src="safari.jpg" alt="African Safari">
+                <span>Go on a real African Safari in South Africa.</span>
+            </div>
+            <div class="bucketlist-item">
+                <img src="skubadiving.jpg" alt="Scuba Diving">
+                <span>Explore the underwater world with Scuba Diving.</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
