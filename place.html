@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Places to Visit</title>
+    <style>
+       body {
+            background-color: #fff5f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: linear-gradient(to right, #ff0080, #ff66b2);
+            padding: 15px 30px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px rgba(255, 20, 147, 0.4);
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+        }
+
+        .nav-container a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-container a:hover {
+            background: white;
+            color: #ff0080;
+            transform: scale(1.1);
+        }
+
+        .container {
+            margin-top: 100px; 
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #8b005d;
+        }
+
+        .image-container {
+            display: inline-block;
+            padding: 15px;
+            border-radius: 20px;
+            background: white;
+            box-shadow: 0px 0px 30px rgba(255, 105, 180, 0.5);
+        }
+
+        .image-container img {
+            display: block;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="container">
+        <h1>Dream Places to Visit</h1>
+        <div class="image-container">
+            <img src="p.jpg" alt="Dream Places to Visit" usemap="#dreamplaces">
+        </div>
+    </div>
+
+    <map name="dreamplaces">
+        <area shape="poly" coords="154,85,154,63,232,14,252,11,338,57,341,82,346,130,157,87" href="brazil.html" target="_blank" alt="Brazil">
+        <area shape="poly" coords="410,83,411,60,500,10,595,60,597,84,503,134,413,89" href="russia.html" target="_blank" alt="Russia">
+        <area shape="poly" coords="26,273,28,247,117,199,213,250,213,274,119,325,29,277" href="india.html" target="_blank" alt="India">
+        <area shape="poly" coords="282,274,283,248,374,199,468,251,468,274,376,324,286,279" href="china.html" target="_blank" alt="China">
+        <area shape="poly" coords="537,275,537,250,629,199,724,250,724,272,630,324,537,280" href="south africa.html" target="_blank" alt="South Africa">
+    </map>
+</body>
+</html>

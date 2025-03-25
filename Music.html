@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beat - Music Compilation</title>
+    <script src="https://kit.fontawesome.com/ed27c31baf.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #ffe6f7;
+            color: #ff02b7;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 15px;
+        }
+        .home-container {
+            background-color: #ff02b7;
+            border-radius: 10px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .home-container a {
+            color: #ffffff;
+            font-size: 24px;
+        }
+        .main-container {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 1250px;
+            margin: 20px auto;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .music-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .category {
+            background-color: #ffffff;
+            border: 3px solid #ff02b7;
+            border-radius: 20px;
+            padding: 20px;
+            flex: 1;
+            max-width: 350px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: opacity 0.3s ease-in-out;
+        }
+        .category:hover {
+            opacity: 0.8;
+        }
+        .category-title {
+            background-color: #ff02b7;
+            color: #ffffff;
+            padding: 12px 0;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .song {
+            margin-bottom: 20px;
+        }
+        .song img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 12px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+            margin-bottom: 8px;
+        }
+        audio {
+            width: 100%;
+            margin: 8px 0;
+        }
+        h1 {
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="home-container">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <h1><i class="fa-solid fa-music"></i> My Beat - Music Compilation</h1>
+    </div>
+
+    <div class="main-container">
+        <div class="music-container">
+            <div class="category">
+                <div class="category-title">Rock <i class="fa-solid fa-guitar"></i></div>
+                <div class="song">
+                    <img src="queen.jpg" alt="Love of my Life - Queen">
+                    <p>"Love of my Life" - Queen</p>
+                    <audio controls><source src="queen.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="song">
+                    <img src="nirvana.jpg" alt="Smells Like Teen Spirit - Nirvana">
+                    <p>"Smells Like Teen Spirit" - Nirvana</p>
+                    <audio controls><source src="nirvana.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="song">
+                    <img src="hotel.jpg" alt="Hotel California - Eagles">
+                    <p>"Hotel California" - Eagles</p>
+                    <audio controls><source src="hotel.mp3" type="audio/mpeg"></audio>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-title">R&B <i class="fa-solid fa-heart"></i></div>
+                <div class="song">
+                    <img src="blinding.jpg" alt="Blinding Lights - The Weeknd">
+                    <p>"Blinding Lights" - The Weeknd</p>
+                    <audio controls><source src="blind.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="song">
+                    <img src="adorn.jpg" alt="Adorn - Miguel">
+                    <p>"Adorn" - Miguel</p>
+                    <audio controls><source src="adorn.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="song">
+                    <img src="location.jpg" alt="Location - Khalid">
+                    <p>"Location" - Khalid</p>
+                    <audio controls><source src="location.mp3" type="audio/mpeg"></audio>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-title">Pop <i class="fa-solid fa-star"></i></div>
+                <div class="song">
+                    <img src="levitating.jpg" alt="Levitating - Dua Lipa">
+                    <p>"Levitating" - Dua Lipa</p>
+                    <audio controls><source src="levitating.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="song">
+                    <img src="shape.jpg" alt="Shape of You - Ed Sheeran">
+                    <p>"Shape of You" - Ed Sheeran</p>
+                    <audio controls><source src="shape.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="song">
+                    <img src="kalimutan.jpg" alt="Kalimutan Ka - Skusta Clee">
+                    <p>"Kalimutan Ka" - Skusta Clee</p>
+                    <audio controls><source src="kalimutan ka.mp3" type="audio/mpeg"></audio>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

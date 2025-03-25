@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russia - Dream Destination</title>
+    <style>
+
+        body {
+            background-color: #fff5f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .russia-section {
+            text-align: center;
+            max-width: 1000px;
+            margin: 60px auto;
+            background: linear-gradient(135deg, #ff0080, #ff66b2);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(255, 20, 147, 0.5);
+            color: #ffffff;
+        }
+
+        .russia-section h2 {
+            font-size: 34px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .russia-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .russia-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-box {
+            display: block;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 320px;
+            height: 220px;
+            box-shadow: 0px 5px 15px rgba(255, 20, 147, 0.3);
+            transition: transform 0.3s ease-in-out;
+            border: 3px solid #ff0080;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        .image-box:hover img {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: linear-gradient(to right, #ff0080, #ff66b2);
+            padding: 15px 30px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px rgba(255, 20, 147, 0.4);
+            position: fixed;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+        }
+
+        .nav-container a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-container a:hover {
+            background: white;
+            color: #ff0080;
+            transform: scale(1.1);
+        }
+
+        .container {
+            margin-top: 100px; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <a href="place.html">BACK</a>
+    </div>
+
+    <div class="russia-section">
+        <h2>Russia - Dream Destination</h2>
+        <p>Russia is a land of history, grand architecture, and breathtaking landscapes. I want to explore the Red Square in Moscow, admire the stunning beauty of Saint Basil's Cathedral, and witness the frozen beauty of Lake Baikal.</p>
+        
+        <div class="russia-gallery">
+            <a href="moscow.jpg" class="image-box" title="Red Square, Moscow">
+                <img src="moscow.jpg" alt="Red Square, Moscow">
+            </a>
+            <a href="saintbasil.jpg" class="image-box" title="Saint Basil's Cathedral">
+                <img src="saithbasil.jpg" alt="Saint Basil's Cathedral">
+            </a>
+            <a href="baikal.jpg" class="image-box" title="Lake Baikal">
+                <img src="baikal.jpg" alt="Lake Baikal">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Kind of Movies</title>
+    <script src="https://kit.fontawesome.com/ed27c31baf.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #ffe6f7;
+            color: #ff02b7;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 15px;
+        }
+        .home-container {
+            background-color: #ff02b7;
+            border-radius: 10px;
+            padding: 10px 15px;
+        }
+        .home-container a {
+            color: #ffffff;
+            font-size: 24px;
+        }
+        .main-container {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .category {
+            background-color: #ffffff;
+            border: 3px solid #ff02b7;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+            text-align: left;
+        }
+        .category-title {
+            background-color: #ff02b7;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+        }
+        .media-container {
+            margin-top: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        video, img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="home-container">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <h1><i class="fa-solid fa-film"></i> My Kind of Movies</h1>
+    </div>
+    <div class="main-container">
+        <div class="category">
+            <div class="category-title">Movies <i class="fa-solid fa-clapperboard"></i></div>
+        </div>
+        <div class="category">
+            <p><strong>Avengers: Endgame</strong></p>
+            <div class="media-container"><img src="ave.jpg" alt="Avengers: Endgame Poster"></div>
+            <p><strong>Synopsis:</strong> The Avengers take a final stand against Thanos.</p>
+            <p><strong>Director:</strong> Anthony and Joe Russo</p>
+            <p><strong>Stars:</strong> Robert Downey Jr., Chris Evans, Scarlett Johansson</p>
+            <div class="media-container"><video controls><source src="endgame.mp4" type="video/mp4"></video></div>
+        </div>
+        <div class="category">
+            <p><strong>Tokyo Drift</strong></p>
+            <div class="media-container"><img src="tok.jpg" alt="Tokyo Drift Poster"></div>
+            <p><strong>Synopsis:</strong> A teenager becomes a drift racer in Japan.</p>
+            <p><strong>Director:</strong> Justin Lin</p>
+            <p><strong>Stars:</strong> Lucas Black, Sung Kang, Bow Wow</p>
+            <div class="media-container"><video controls><source src="tokyo.mp4" type="video/mp4"></video></div>
+        </div>
+    </div>
+</body>
+</html>
